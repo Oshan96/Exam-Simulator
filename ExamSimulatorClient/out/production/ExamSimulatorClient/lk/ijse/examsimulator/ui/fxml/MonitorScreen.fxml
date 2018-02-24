@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.examsimulator.ui.controller.MonitorScreen">
+   <children>
+      <StackPane fx:id="monitorPane" layoutX="80.0" layoutY="50.0" prefHeight="256.0" prefWidth="444.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="viewStream" accessibleRole="PARENT" fitHeight="256.0" fitWidth="444.0" pickOnBounds="true" />
+         </children>
+      </StackPane>
+      <Button fx:id="btnCancel" accessibleRole="PARENT" layoutX="455.0" layoutY="335.0" mnemonicParsing="false" text="Terminate" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="70.0" />
+   </children>
+</AnchorPane>

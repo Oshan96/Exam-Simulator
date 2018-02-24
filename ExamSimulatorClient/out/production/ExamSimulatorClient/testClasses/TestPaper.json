@@ -1,0 +1,52 @@
+{
+	"pid" : "P001",
+	"totalMarks":100,
+	"mcqQuestions":[
+		{
+			"qid":1,
+			"marks":20,
+			"question":"question1",
+			"options":[
+					{
+						"val":"option1"
+					},
+					{
+						"val":"option2"
+					}
+			],
+			"answer":"option2"
+		},
+		{
+			"qid":2,
+			"marks":10,
+			"question":"question2",
+			"options":[
+				{
+					"val":"option1"
+				},
+				{
+					"val":"option2"
+				}
+			],
+			"answer":"option1"
+		}
+	],
+
+	"codingQs":[
+		{
+			"qid":3,
+			"marks":25,
+			"question":"coding q1",
+			"answer":"correct output for q1",
+			"studentSource":""
+		},
+		{
+			"qid":4,
+			"marks":15,
+			"question":"coding q2",
+			"answer":"correct output for q2",
+			"studentSource":""
+		}
+	]
+
+}

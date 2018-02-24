@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.examsimulator.ui.controller.StudentLogin">
+   <children>
+      <Label layoutX="140.0" layoutY="14.0" text="Login">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <TextField fx:id="txtUsername" layoutX="69.0" layoutY="104.0" prefHeight="26.0" prefWidth="256.0" promptText="username">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="69.0" layoutY="160.0" onAction="#login" prefHeight="26.0" prefWidth="256.0" promptText="password">
+         <font>
+            <Font size="16.0" />
+         </font></PasswordField>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="273.0" layoutY="229.0" onAction="#login" prefHeight="32.0" prefWidth="84.0" style="-fx-background-color: #397bd6;" text="Login" textFill="WHITE" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="71.0">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

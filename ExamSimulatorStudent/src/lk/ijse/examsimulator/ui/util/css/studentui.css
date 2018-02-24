@@ -1,0 +1,65 @@
+#root{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #3a7bd5;
+    -fx-border-width: 1px;
+}
+#titlePane{
+    -fx-border-color: transparent transparent silver transparent;
+    -fx-background-color: white;
+}
+#btnMaximize{
+    -fx-graphic: url("../icons/restore.png");
+    -fx-background-color: transparent;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-padding: 0px;
+}
+#btnMaximize:hover{
+    -fx-effect: dropshadow(one-pass-box, grey, 2, 1.0, 0.2, 0.3);
+}
+
+#btnMin:hover{
+    -fx-effect: dropshadow(one-pass-box, grey, 2, 1.0, 0.2, 0.3);
+}
+
+#btnMin{
+    -fx-graphic: url("../icons/minimize.png");
+    -fx-background-color: transparent;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 25px;
+    -fx-max-width: 30px;
+    -fx-max-height: 25px;
+    -fx-padding: 0px;
+}
+
+#btnClose{
+    -fx-graphic: url("../icons/close.png");
+    -fx-background-color: transparent;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-padding: 0px;
+}
+#btnClose:hover{
+    -fx-effect: dropshadow(one-pass-box, red, 2, 1.0, 0.2, 0.3);
+}
+
+#btnMsg{
+    -fx-background-radius: 10em;
+    -fx-graphic: url("../icons/message.png");
+    -fx-background-color: derive(#3a7bd5,10%);
+}
+
+#msgDrawer, #msgBoxContainer, #msgDrawer .scroll-pane, #msgDrawer .scroll-pane .viewport{
+    -fx-background-radius: 6px;
+
+}
+
+#msgDrawer{
+    -fx-background-color: transparent;
+}
+
+

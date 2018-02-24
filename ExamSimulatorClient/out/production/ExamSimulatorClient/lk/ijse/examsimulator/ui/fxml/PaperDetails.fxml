@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="1069.0" stylesheets="@../util/css/examinerui.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.examsimulator.ui.controller.PaperDetails">
+   <children>
+      <Label fx:id="lblPaperNo" accessibleRole="PARENT" layoutX="119.0" layoutY="26.0" text="Paper No. : " AnchorPane.leftAnchor="119.0" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="1.0" layoutY="76.0" prefHeight="595.0" prefWidth="1067.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="76.0">
+         <children>
+            <VBox>
+               <children>
+                  <TilePane alignment="TOP_CENTER" hgap="20.0" prefColumns="3" prefHeight="303.0" prefWidth="910.0" vgap="20.0">
+                     <children>
+                        <Label fx:id="lblMCQ" alignment="CENTER" contentDisplay="TEXT_ONLY" lineSpacing="5.0" prefHeight="298.0" prefWidth="227.0" styleClass="lblDetails" text="MCQ Questions" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCoding" alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="298.0" prefWidth="227.0" styleClass="lblDetails" text="Coding Questions" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotal" alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="298.0" prefWidth="227.0" styleClass="lblDetails" text="Total Marks" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TilePane>
+                  <TableView fx:id="tblDetail" accessibleRole="PARENT" prefHeight="282.0" prefWidth="947.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="colQid" editable="false" prefWidth="47.19997787475586" text="No." />
+                      <TableColumn fx:id="colType" editable="false" prefWidth="73.60000610351562" text="Type" />
+                        <TableColumn fx:id="colQuestion" editable="false" minWidth="250.0" prefWidth="468.0000457763672" text="Question" />
+                        <TableColumn fx:id="colAnswer" editable="false" prefWidth="281.59991455078125" text="Correct Answer" />
+                        <TableColumn fx:id="colMarks" editable="false" prefWidth="85.5999755859375" text="Marks" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="60.0" right="60.0" top="20.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <JFXButton fx:id="btnBack" contentDisplay="GRAPHIC_ONLY" layoutX="46.0" layoutY="18.0" maxWidth="34.0" minWidth="27.0" mnemonicParsing="false" onAction="#goBack" prefHeight="41.0" prefWidth="27.0" ripplerFill="TRANSPARENT" styleClass="btnArrow" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="18.0">
+         <tooltip>
+            <Tooltip text="Go back" />
+         </tooltip></JFXButton>
+      <JFXButton fx:id="btnForward" contentDisplay="GRAPHIC_ONLY" layoutX="921.0" layoutY="4.0" maxWidth="34.0" minWidth="27.0" mnemonicParsing="false" onAction="#next" prefHeight="41.0" prefWidth="27.0" ripplerFill="TRANSPARENT" rotate="180.0" styleClass="btnArrow" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="18.0">
+         <tooltip>
+            <Tooltip text="Next" />
+         </tooltip>
+      </JFXButton>
+      <Label fx:id="lblPaperNo1" accessibleRole="PARENT" layoutX="700.0" layoutY="25.0" text="Duration (hrs.)" AnchorPane.rightAnchor="276.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDuration" layoutX="805.0" layoutY="25.0" prefHeight="26.0" prefWidth="114.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="25.0" />
+   </children>
+</AnchorPane>

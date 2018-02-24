@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="719.0" stylesheets="@../util/css/examinerui.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.examsimulator.ui.controller.StartExam">
+   <children>
+      <StackPane layoutX="1.0" layoutY="35.0" prefHeight="300.0" prefWidth="598.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <HBox fx:id="countContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER" />
+         </children></StackPane>
+      <StackPane layoutX="1.0" layoutY="386.8999938964844" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#startExam" prefHeight="32.0" prefWidth="216.0" style="-fx-background-color: #397bd6;" text="Start" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <JFXButton fx:id="btnBack" contentDisplay="GRAPHIC_ONLY" layoutX="56.0" layoutY="28.0" maxWidth="34.0" minWidth="27.0" mnemonicParsing="false" onAction="#goBack" prefHeight="41.0" prefWidth="27.0" ripplerFill="TRANSPARENT" styleClass="btnArrow" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="18.0">
+         <tooltip>
+            <Tooltip text="Go back" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

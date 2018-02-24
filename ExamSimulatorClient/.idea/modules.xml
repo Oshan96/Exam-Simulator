@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExamSimulatorClient.iml" filepath="$PROJECT_DIR$/ExamSimulatorClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExamSimulatorCommon/ExamSimulatorCommon.iml" filepath="$PROJECT_DIR$/../ExamSimulatorCommon/ExamSimulatorCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExamSimulatorServer/ExamSimulatorServer.iml" filepath="$PROJECT_DIR$/../ExamSimulatorServer/ExamSimulatorServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExamSimulatorStudent/ExamSimulatorStudent.iml" filepath="$PROJECT_DIR$/../ExamSimulatorStudent/ExamSimulatorStudent.iml" />
+    </modules>
+  </component>
+</project>
